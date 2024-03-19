@@ -1,0 +1,760 @@
+html{
+  scroll-behavior : smooth;
+}
+
+
+.bg {
+  background-image: url('backgroundimg.jpeg');
+  width: 100%;
+  height: 600px;
+  /* Adjust height as needed */
+  background-size: cover;
+  /* Adjust how the background image is sized */
+  background-position: center;
+  /* Position the background image */
+  /* Additional styles */
+}
+
+
+.container {
+  height: 100vh;
+  /* Set a height for the container */
+  background-image: url('https://via.placeholder.com/1920x1080');
+  /* Replace with your image */
+  background-size: cover;
+  background-attachment: fixed;
+  /* Keep the background fixed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+h1 {
+  margin-top: 20%;
+  /* Adjust the distance from the top */
+  animation: slide 1s ease-in-out infinite alternate;
+  /* Animation definition */
+}
+
+.content {
+  margin-left: 50px;
+  font-size: 90px;
+  color: #16163F;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  animation: slideContent 1s ease-in-out infinite alternate;
+}
+
+.masala {
+  margin-left: 50px;
+  font-size: 15px;
+  color: black;
+  animation: slideMasala 1s ease-in-out infinite alternate;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(0);
+    /* Initial position */
+  }
+
+  to {
+    transform: translateY(0);
+    /* Amount to move */
+  }
+}
+
+@keyframes slideContent {
+  from {
+    transform: translateX(0);
+    /* Initial position */
+  }
+
+  to {
+    transform: translateX(2px);
+    /* Move content in from left */
+  }
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 0;
+}
+
+.cal.BMI #box {
+  height: 600px;
+  width: 750px;
+  border: 10ch solid #000;
+  text-align: center;
+  font-size: 24px;
+  background-color: #CCC;
+
+}
+
+
+
+header {
+  background-color: white;
+  color: black;
+  padding: 10px 0;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 20px;
+  /* Size property doesn't exist in CSS; it might be a typo */
+  /* size: 20px; */
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  /* Reset padding to ensure no default padding */
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+  /* Remove right margin for the last item */
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #9e3ffd;
+  /* You don't need to redefine text-decoration: none; in :hover state */
+}
+
+
+
+
+
+.services1 {
+  text-align: center;
+  font-size: 16px;
+  color: #9e3ffd;
+}
+
+.services2 {
+  text-align: center;
+  font-size: 36px;
+  color: #16163F
+}
+
+
+
+
+
+.slider-frame {
+  overflow: hidden;
+  height: 100vh;
+  /* 100% viewport height */
+  width: 100vw;
+  /* 100% viewport width */
+  margin: 0;
+  padding: 0;
+}
+
+/*----slide animation # arnav anand notes   ----*/
+@keyframes slide_animation {
+  0% {
+    left: 0;
+  }
+
+  10% {
+    left: 0;
+  }
+
+  20% {
+    left: 100%;
+  }
+
+  30% {
+    left: 100%;
+  }
+
+  40% {
+    left: 200%;
+  }
+
+  50% {
+    left: 200%;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  70% {
+    left: 100%;
+  }
+
+  80% {
+    left: 0;
+  }
+
+  90% {
+    left: 0;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.slide-images {
+  width: 600%;
+  /* Adjusted width for three slides */
+  height: 100vh;
+  /* 100% viewport height */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  animation: slide_animation 33s infinite alternate;
+  /* Standardized animation property */
+}
+
+.img-container {
+  height: 100vh;
+  /* 100% viewport height */
+  width: 33.333%;
+  /* Adjusted width for individual slide */
+  position: relative;
+  float: left;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* Consider box-sizing for accurate width calculations */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.photos {
+  background-image: url("body\ categories.jpeg");
+  width: 100%;
+  height: 250px;
+  /* Adjust height as needed */
+  background-size: cover;
+  /* Adjust how the background image is sized */
+  background-position: center;
+  /* Position the background image */
+  /* Additional styles */
+}
+
+.cal {
+  border: 1px solid #000;
+  background-color: #16163F;
+  width: 100%;
+  height: 800px;
+}
+
+.BMI {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+}
+.Quote{
+  text-align: center;
+  font-size: 27px;
+}
+
+
+.imgslider {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.imgslider {
+  width: 60%;
+  height: 600px;
+  background-image: url("pics/");
+  background-size: 100% 100%;
+
+}
+
+
+
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  text-decoration: none;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-right: 80px;
+  text-decoration: none;
+}
+
+.hero .cta-buttons {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.hero .cta-button {
+  margin: 0 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+.cta-button {
+  margin: 0px 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 500px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.job-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.job-category {
+  text-align: center;
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.category-icon img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.category-icon {
+  margin: 0 auto;
+}
+
+.job-category h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.job-category p {
+  font-size: 16px;
+}
+
+
+.job-listings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.job-listing {
+  width: calc(50% - 20px);
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-listing h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.company {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.location {
+  color: #555;
+  margin-top: 5px;
+}
+
+.deadline {
+  color: #777;
+  margin-top: 10px;
+}
+
+.job-listing a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.job-listing a:hover {
+  background-color: #0056b3;
+}
+
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.benefit {
+  width: calc(50% - 20px);
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.benefit i {
+  font-size: 36px;
+  color: #007BFF;
+}
+
+.benefit h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.benefit p {
+  font-size: 16px;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial {
+  width: calc(50% - 20px);
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: #007BFF;
+  font-size: 14px;
+}
+
+/*  Footer Section */
+footer {
+  background-color: #333;
+  width: fit-content;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Styling for Footer Links */
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.footer-links ul li {
+  margin: 10px 0;
+
+  /* Increased margin for links */
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+  /* Smooth color transition on hover */
+}
+
+.footer-links ul li a:hover {
+  color: #ff6600;
+  /* Change link color on hover */
+  text-decoration: underline;
+}
+
+/* Styling for Social Media Icons */
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* 
+.social-media ul li {
+    display: inline;
+    margin-right: 20px; /* Increased margin between icons */
+
+
+.social-media ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+  /* Larger font size for icons */
+  transition: color 0.3s ease;
+  /* Smooth color transition on hover */
+}
+
+/* Add specific styles for social media icons (Font Awesome or other icon libraries) */
+.social-media ul li a.fa-facebook:hover {
+  color: #1877f2;
+  /* Facebook blue color */
+}
+
+.social-media ul li a.fa-twitter:hover {
+  color: #1da1f2;
+  /* Twitter blue color */
+}
+
+.social-media ul li a.fa-linkedin:hover {
+  color: #0e76a8;
+  /* LinkedIn blue color */
+}
+
+*/ .blog-post {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.blog-post img {
+  max-width: 100%;
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.blog-post p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.blog-post a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.blog-post a:hover {
+  background-color: #555;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  background-color: #333;
+  color: #fff;
+}
+
+.hero {
+  height: auto;
+  width: auto;
+  background-image: linear-gradient(white, rgb(183, 41, 41), black 80%, white);
+  background-size: contain;
+  margin-bottom: 50px;
+  background-position: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.box {
+  text-align: center;
+  background-color: rgb(255, 17, 17);
+  color: white;
+  font-size: 50px;
+  display: none;
+}
+
+@media (max-width:400px) {
+  #box1 {
+    display: block;
+  }
+}
+
+@media(min-width:401px)and(max-width:600px) {
+  #box2 {
+    display: none;
+    background-color: green;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: #4a92df;
+  padding: 20px;
+  float: left;
+  width: 20%;
+}
+
+.main {
+  background-color: #da6fdf;
+  text-align: center;
+  padding: 20px;
+  float: left;
+  width: 60%;
+}
+
+.right {
+  background-color: #e2ea73;
+  padding: 20px;
+  float: left;
+  width: 20%;
+}
+
+@media screen and (min-width:500px)and (max-width:800px) {
+
+  .left,
+  .right,
+  .main,
+  .right {
+    width: 100px;
+  }
+}
+
+
+.Last {
+  border: 1px solid #000;
+  width: 100%;
+  height: 600px;
+  margin-top: 50px;
+  margin: auto;
+
+}
+.photo-slider {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.slider-frame {
+  overflow: hidden;
+}
+
+.slide-images {
+  display: flex;
+  transition: transform s ease-in-out;
+}
+
+.img-container {
+  width: auto;
+}
+
+.img-container img {
+  width: auto;
+  height: auto;
+}
+
+
+
+
